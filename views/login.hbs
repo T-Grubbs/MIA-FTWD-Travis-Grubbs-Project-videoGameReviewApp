@@ -1,0 +1,60 @@
+<h1>
+  Heres the Login Page
+</h1>
+
+<!--
+<form action="/login" method="POST">
+<h3>Personal Info</h3>
+  <div>
+    <label for="firstname">First Name:</label>
+    <input type="text" name="firstname">
+  </div>
+
+  <div>
+    <label for="lastname">Last Name:</label>
+    <input type="text" name="lastname">
+  </div>
+
+<h3>Login Credentials</h3>
+
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" name="username">
+  </div>
+
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" name="password">
+  </div>
+  
+  <div>
+    <input type="submit" value="Log In">
+  </div>
+</form>
+
+-->
+
+
+
+{{#if user}}
+<h1>HEY, ARENT YOU LOGGED?</h1>
+{{else}}
+
+<form action="/login" method="POST" id="form-container">
+  <label for="username">Username</label>
+  <input id="username" type="text" name="username" placeholder="New username here">
+  <br><br>
+  <label for="password">Password</label>
+  <input id="password" type="password" name="password" placeholder="Your password">
+
+  
+  <button>Login</button>
+<br><br>
+
+  <p class="account-message">
+   Don't have an account? 
+    <a href="/signup">Sign Up</a>
+  </p>
+</form>
+
+{{/if}}
