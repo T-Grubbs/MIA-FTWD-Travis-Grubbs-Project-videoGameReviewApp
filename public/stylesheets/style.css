@@ -1,5 +1,4 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
@@ -8,5 +7,8 @@ a {
 * {
   padding: 0;
   margin: 0; }
+
+p {
+  font-size: 22px; }
 
 /*# sourceMappingURL=style.css.map */

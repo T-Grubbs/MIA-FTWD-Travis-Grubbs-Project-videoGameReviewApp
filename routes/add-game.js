@@ -19,29 +19,29 @@ router.post("/add-game", (req, res, next) => {
 
 
 
-  if (username === "" || password === "") {
-    res.render("signup", { message: "Indicate username and password" });
+  if (title === "") {
+    res.render("add-game", { message: "Please include game title" });
     return;
   }
 
 
 
 
-Game.findOne({ theTitle })
+Game.findOne({ title })
 .then(user => {
   if (user !== null) {
-    res.render("add-game", { message: "The username already exists" });
+    res.render("add-game", { message: "This game has already been added" });
     return;
   }
 
   
 
   const newGame = new Game({
-    title: title,
-  platforms: platforms,
-  genre: genre,
+  title:       title,
+  platforms:   platforms,
+  genre:       genre,
   multiplayer: isMultiplayer,
-  online: isOnline,
+  online:      isOnline,
   //reviews: [{userReviews: [Reviews]}]
   });
 

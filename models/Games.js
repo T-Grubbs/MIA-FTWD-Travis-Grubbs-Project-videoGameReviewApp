@@ -4,11 +4,11 @@ const Reviews   = require('../models/Reviews')
 
 
 const gameSchema = new Schema({
-  title: String,
-  platforms: [String],
-  genre: String,
+  title:       String,
+  platforms:  [String],
+  genre:       String,
   multiplayer: String,
-  online: String,
+  online:      String,
  // reviews: [{userReviews: [Reviews]}]
 
 });
