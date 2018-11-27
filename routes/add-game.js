@@ -16,6 +16,7 @@ router.post("/add-game", (req, res, next) => {
   const genre  = req.body.genre;
   const multiplayer  = req.body.multiplayer;
   const online = req.body.online;
+  const image = req.body.image
 
   // if (username === "" || password === "") {
   //   res.render("signup", { message: "Indicate username and password" });
@@ -38,6 +39,7 @@ router.post("/add-game", (req, res, next) => {
       genre: genre,
       multiplayer: multiplayer,
       online: online,
+      image: image,
     });
 
     newGame.save((err) => {

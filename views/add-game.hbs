@@ -1,14 +1,14 @@
 <h1>THIS IS THE ADD A GAME PAGE</h1>
 
 
-<form action="games" method="POST">
+<form action="/add-game" method="POST">
   <div class="form-group">
     <label for="gameTitle">Title</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Game Title">
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Game Title" name="title">
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Genre</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <select class="form-control" id="exampleFormControlSelect1" name="genre">
       <option>Action/Adventure</option>
       <option>Platform Style</option>
       <option>FPS</option>
@@ -22,7 +22,7 @@
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect2">Game Platforms</label>
-    <select multiple class="form-control" id="exampleFormControlSelect2">
+    <select multiple class="form-control" id="exampleFormControlSelect2" name="platforms">
       <option>PlayStation 4</option>
       <option>PlayStation 3</option>
       <option>Nintendo Switch</option>
@@ -43,7 +43,7 @@
     <div class="col-sm-2">Online</div>
     <div class="col-sm-10">
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <input class="form-check-input" type="checkbox" id="gridCheck1" name="online">
         <label class="form-check-label" for="gridCheck1" aria-placeholder="No">
           Yes
         </label>
@@ -55,23 +55,27 @@
       <legend class="col-form-label col-sm-2 pt-0">Multiplayer</legend>
       <div class="col-sm-10">
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <input class="form-check-input" type="radio" name="multiplayer" id="gridRadios1" value="Sinlge Player">
           <label class="form-check-label" for="gridRadios1">
             Sinlge Player
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <input class="form-check-input" type="radio" name="multiplayer" id="gridRadios2" value="Multiplayer">
           <label class="form-check-label" for="gridRadios2">
             Multiplayer
           </label>
         </div>
         <div class="form-check disabled">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+          <input class="form-check-input" type="radio" name="multiplayer" id="gridRadios3" value="MMO">
           <label class="form-check-label" for="gridRadios3">
             MMO
           </label>
         </div>
+      </div>
+      <div style="padding-left: 25px">
+        <label for="gameImage">Image</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Game Image" name="image" value="image">
       </div>
     </div>
   </fieldset>
@@ -85,4 +89,3 @@
 
 
 
-</form>
