@@ -142,5 +142,11 @@ app.use('/', gameDetails);
 const review = require('./routes/reviews');
 app.use('/', review);
 
+const deleteGame = require('./routes/delete-game');
+app.use('/', deleteGame);
+
+const editGame = require('./routes/edit-game');
+app.use('/', editGame);
+
 
 module.exports = app;

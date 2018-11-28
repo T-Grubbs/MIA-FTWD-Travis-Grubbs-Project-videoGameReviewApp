@@ -1,0 +1,39 @@
+<h1>Edit {{theGame.title}}</h1>
+
+
+<form action="/update/{{theGame._id}}" method="POST">
+
+
+  <label for="">Title:</label>
+  <input type="text" name="title" value="{{theGame.title}}">
+
+ {{!-- <label for="">Author:</label>
+  <select name="author">
+   {{#each allTheAuthors}}
+   {{#if this.yes}}
+    <option value="{{this._id}}" selected="selected">{{this.firstName}} {{this.lastName}} </option>
+    {{else}}
+        <option value="{{this._id}}">{{this.firstName}} {{this.lastName}} </option>
+   {{/if}}
+   {{/each}}
+  </select> --}}
+
+  <label for="">Platforms:</label>
+  <input type="text" name="platforms" value="{{theGame.platforms}}">
+
+  <label for="">Genre:</label>
+  <input type="text" name="genre" value="{{theGame.genre}}">
+
+  <label for="">Multiplayer:</label>
+  <input type="text" name="multiplayer" value="{{theGame.multiplayer}}">
+
+  <label for="">Online:</label>
+  <input type="text" name="online" value="{{theGame.online}}">
+
+  <label for="">Image Link:</label>
+  <input type="text" name="image" value="{{theGame.image}}">
+
+  <button type="submit">Save Changes</button>
+
+
+</form>
