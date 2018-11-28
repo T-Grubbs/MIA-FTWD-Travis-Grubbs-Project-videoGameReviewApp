@@ -25,14 +25,25 @@ img {
 .carousel-height {
   height: 80%;
   width: 80%;
-  padding-left: 220px; }
+  padding-left: 255px; }
+
+.carousel-border {
+  border-style: ridge; }
 
 .carousel-background {
-  background-color: black; }
+  background-color: black;
+  background-image: url("/images/digitaltrain1.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .sect2 {
   background-color: darkgrey;
-  overflow: hidden; }
+  overflow: hidden;
+  background-image: url("/images/fortnitewallpaper.jpeg");
+  height: 50vh;
+  color: white;
+  text-decoration: underline; }
 
 .sect2-div {
   float: right;
@@ -41,7 +52,8 @@ img {
 
 .sect3 {
   clear: both;
-  background-color: grey; }
+  background-color: grey;
+  display: flex; }
 
 .sect4-div {
   text-align: center;
@@ -86,5 +98,8 @@ img {
   background-size: cover;
   height: 100%;
   width: 100%; }
+
+.centering {
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
