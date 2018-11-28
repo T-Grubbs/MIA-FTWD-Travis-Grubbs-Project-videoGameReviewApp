@@ -10,7 +10,7 @@ const gameSchema = new Schema({
   multiplayer: String,
   online:      String,
   image:       String,
- // reviews: [{userReviews: [Reviews]}]
+  reviews:    [{type: Schema.Types.ObjectId, ref: 'Reviews'}]
 
 });
 

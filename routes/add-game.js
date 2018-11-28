@@ -17,11 +17,9 @@ router.post("/add-game", (req, res, next) => {
   const multiplayer  = req.body.multiplayer;
   const online = req.body.online;
   const image = req.body.image
+  const review = req.body.review
 
-  // if (username === "" || password === "") {
-  //   res.render("signup", { message: "Indicate username and password" });
-  //   return;
-  // }
+
 
   Game.findOne({ title })
   .then(game => {
@@ -30,9 +28,6 @@ router.post("/add-game", (req, res, next) => {
       return;
     }
 
-    // const salt = bcrypt.genSaltSync(bcryptSalt);
-    // const hashPass = bcrypt.hashSync(password, salt);
-
     const newGame = new Game({
       title: title,
       platforms: platforms,
@@ -40,6 +35,7 @@ router.post("/add-game", (req, res, next) => {
       multiplayer: multiplayer,
       online: online,
       image: image,
+      review: review
     });
 
     newGame.save((err) => {

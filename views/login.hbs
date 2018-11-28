@@ -1,6 +1,4 @@
-<h1>
-  Heres the Login Page
-</h1>
+
 
 <!--
 <form action="/login" method="POST">
@@ -39,6 +37,9 @@
 {{#if user}}
 <h1>HEY, ARENT YOU LOGGED?</h1>
 {{else}}
+<div class="divHeight">
+  <div class="login-bg">
+
 
 <form action="/login" method="POST" id="form-container">
   <label for="username">Username</label>
@@ -55,6 +56,8 @@
    Don't have an account? 
     <a href="/signup">Sign Up</a>
   </p>
+  </div>
+</div>
 </form>
 
 {{/if}}

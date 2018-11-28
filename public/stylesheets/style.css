@@ -2,6 +2,12 @@ body {
   padding-left: 5px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
+.nav-fix {
+  position: fixed;
+  top: 0;
+  color: blue;
+  background-color: yellow; }
+
 a {
   color: #00B7FF; }
 
@@ -15,5 +21,70 @@ p {
 img {
   width: 100px;
   height: 140px; }
+
+.carousel-height {
+  height: 80%;
+  width: 80%;
+  padding-left: 220px; }
+
+.carousel-background {
+  background-color: black; }
+
+.sect2 {
+  background-color: darkgrey;
+  overflow: hidden; }
+
+.sect2-div {
+  float: right;
+  padding-right: 30px;
+  text-align: center; }
+
+.sect3 {
+  clear: both;
+  background-color: grey; }
+
+.sect4-div {
+  text-align: center;
+  background-image: url("/images/gamesCollabBg.jpeg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  color: white; }
+
+.sect4 img {
+  height: 170px;
+  width: 190px; }
+
+.start-btn {
+  height: 15vh;
+  width: 23vw;
+  border-color: transparent;
+  border-radius: 0%; }
+
+.btn-sect {
+  display: flex;
+  justify-content: space-evenly; }
+
+.divHeight {
+  height: 100vh;
+  width: 100vw; }
+
+.grey-sect {
+  background-color: #5e5252; }
+
+.signup-bg {
+  background-image: url("/images/zelda-wallpaper.jpeg");
+  background-size: cover;
+  height: 100%;
+  width: 100%; }
+
+.divHeight form {
+  padding: 25px; }
+
+.login-bg {
+  background-image: url("/images/megamanWallpaper.jpeg");
+  background-size: cover;
+  height: 100%;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

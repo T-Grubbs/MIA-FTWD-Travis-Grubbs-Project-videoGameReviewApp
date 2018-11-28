@@ -139,6 +139,8 @@ app.use('/', addGame);
 const gameDetails = require('./routes/game-details');
 app.use('/', gameDetails);
 
+const review = require('./routes/reviews');
+app.use('/', review);
 
 
 module.exports = app;

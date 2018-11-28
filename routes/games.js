@@ -24,7 +24,7 @@ router.get("/games", (req, res, next) => {
 
 
 
-  //res.render("games");
+ 
 });
 
 
