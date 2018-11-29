@@ -1,38 +1,5 @@
 
 
-<!--
-<form action="/login" method="POST">
-<h3>Personal Info</h3>
-  <div>
-    <label for="firstname">First Name:</label>
-    <input type="text" name="firstname">
-  </div>
-
-  <div>
-    <label for="lastname">Last Name:</label>
-    <input type="text" name="lastname">
-  </div>
-
-<h3>Login Credentials</h3>
-
-  <div>
-    <label for="username">Username:</label>
-    <input type="text" name="username">
-  </div>
-
-  <div>
-    <label for="password">Password:</label>
-    <input type="password" name="password">
-  </div>
-  
-  <div>
-    <input type="submit" value="Log In">
-  </div>
-</form>
-
--->
-
-
 
 {{#if user}}
 <h1>HEY, ARENT YOU LOGGED?</h1>
@@ -40,6 +7,7 @@
 <div class="divHeight">
   <div class="login-bg">
 
+<div class="login-form">
 
 <form action="/login" method="POST" id="form-container">
   <label for="username">Username</label>
@@ -59,5 +27,6 @@
   </div>
 </div>
 </form>
+</div>
 
 {{/if}}

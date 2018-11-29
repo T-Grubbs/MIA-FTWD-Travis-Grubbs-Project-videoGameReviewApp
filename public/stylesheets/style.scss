@@ -15,6 +15,20 @@ footer {
   height: 5.5vh;
 }
 
+.carousel-caption p {
+  border-radius: 15px;
+  height: 20vh;
+  color: rgba(255, 255, 255, 0.911);
+  background-color: rgba(48, 38, 38, 0.637);
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 185px;
+
+}
+
 .iconSize {
 
  padding-top:20px;
@@ -71,23 +85,40 @@ img {
 }
 
 .sect2 {
-  background-color: darkgrey;
+ 
   overflow: hidden;
-  background-image: url('/images/fortnitewallpaper.jpeg');
-  height:50vh;
-  color:white;
-  text-decoration: underline;
+  background-image: url(/images/gameCharacters.png);
+  height: 1%;
+  background-repeat: no-repeat;
+  
+ }
+
+
+.sect2-div {
+  
+  margin-top: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   
 }
-.sect2-div {
-  float: right;
-  padding-right: 30px;
-  text-align: center;
+
+.sect2-div p {
+  border-radius: 15px;
+  height: 20vh;
+  color: rgba(255, 255, 255, 0.911);
+  background-color: rgba(48, 38, 38, 0.637);
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 
 .sect3 {
   clear: both;
-  background-color: grey;
+  // background-color: grey;
   display:flex;
 }
 
@@ -134,7 +165,7 @@ img {
 }
 
 .grey-sect {
-  background-color: #5e5252;
+//  background-color: #5e5252;
 }
 
 .signup-bg {
@@ -142,6 +173,11 @@ img {
   background-size: cover;
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 250px;
+  
 }
 
 .divHeight form {
@@ -152,8 +188,27 @@ img {
   background-size: cover;
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .centering{
   align-items: center;
 }
+
+
+.login-form{
+  background-color: rgba(255, 255, 255, 0.486);
+  width:25vw;
+  border-radius: 5%;
+  border-style: double;
+}
+
+.signup-form{
+  background-color: rgba(255, 255, 255, 0.486);
+  width:25vw;
+  border-radius: 5%;
+  border-style: double;
+}
+
