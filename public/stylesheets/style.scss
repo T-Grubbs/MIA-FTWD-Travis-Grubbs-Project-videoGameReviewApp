@@ -3,7 +3,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 .nav-fix{
-  
+  border-bottom: 5px solid black;
   top: 0;
   color: blue;
   background-color: yellow;
@@ -13,6 +13,7 @@ footer {
   color: blue;
   background-color: yellow;
   height: 5.5vh;
+  border-top: 5px solid black;
 }
 
 .carousel-caption p {
@@ -212,3 +213,65 @@ img {
   border-style: double;
 }
 
+.profile-page-bg {
+  background-image: url('/images/controllers.webp');
+  background-position: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.add-game-bg {
+  background-image: url('/images/consoleSlideImg.webp');
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding-left: 60px;
+}
+
+
+
+.my-form-control {
+  display: block;
+  width: 25%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: rgba(255, 255, 255, 0.685);
+  background-clip: padding-box;
+  border: 1px solid #ffffff;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.my-form-control-list {
+  display: block;
+  width: 20%;
+  height: 28vh;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: rgba(255, 255, 255, 0.685);
+  background-clip: padding-box;
+  border: 1px solid #ffffff;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.options-border {
+  background-color: rgba(243, 224, 224, 0.582);
+  height: 25vh;
+  width: 30vw;
+  border-radius: 10px;
+
+}
+
+.rightPad {
+  padding-right: 43px;
+}

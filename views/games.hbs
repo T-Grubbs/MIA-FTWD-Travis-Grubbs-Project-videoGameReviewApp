@@ -1,7 +1,22 @@
 <h1>THIS IS THE GAMES PAGE</h1>
 
 {{#each games}}
-<a href="/game-details/{{this._id}}"><h2>{{this.title}}</h2></a>
+<h2>{{this.title}}</h2></a>
+<img src="{{this.image}}" alt="" style="width: 100px">
+<a href="/game-details/{{this._id}}">
+
 
 
 {{/each}}
+
+{{!-- <h1>
+this is the books page
+</h1>
+
+{{#each books}}
+<h2>{{this.title}}</h2>
+<h3>{{this.author.firstName}} {{this.author.lastName}}</h3>
+<a href="/books/{{this._id}}">See Details</a>
+<a href="/books/{{this._id}}/edit">Edit This Book</a>
+{{/each}} --}}
+
