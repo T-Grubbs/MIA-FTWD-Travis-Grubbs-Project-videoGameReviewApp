@@ -3,11 +3,39 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 .nav-fix{
-  position: fixed;
+  
   top: 0;
   color: blue;
   background-color: yellow;
 }
+
+footer {
+  color: blue;
+  background-color: yellow;
+  height: 5.5vh;
+}
+
+.iconSize {
+
+ padding-top:20px;
+  font-size: 80px;
+}
+
+.navBorder {
+  
+  border-bottom-color: black;
+  border-bottom-width: 5px;
+}
+
+.landing-top{
+  background-color: peachpuff;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+
+
 
 a {
   color: #00B7FF;
@@ -31,9 +59,7 @@ img {
   padding-left: 255px;
 }
 
-.carousel-border{
-  border-style: ridge;
-}
+
 
 .carousel-background {
   background-color: black;
