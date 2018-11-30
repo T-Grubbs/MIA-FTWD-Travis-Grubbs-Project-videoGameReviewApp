@@ -395,10 +395,10 @@ img {
 //  background-color:rgba(255, 255, 255, 0.712);
 }
 .gamesBg {
-  background-image: url('/images/mk.png');
+  background-attachment: fixed;
+  background-repeat:no-repeat ;
   background-size: cover;
-  background-position: cover;
-
+  padding-bottom: 100px
 }
 
 
