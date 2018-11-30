@@ -9,7 +9,7 @@ router.get("/game-details", (req, res, next) => {
 });
 
 router.get('/game-details/:id', (req, res, next)=>{
-  Game.findById(req.params.id).populate('reviews')
+  Game.findById(req.params.id).populate({path: 'reviews', populate : {path: 'user'}})
   .then((theGame)=>{
       res.render('game-details', theGame)
 

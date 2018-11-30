@@ -42,7 +42,7 @@ router.post("/add-game", (req, res, next) => {
       if (err) {
         res.render("add-game", { message: "Something went wrong" });
       } else {
-        res.redirect("/test");
+        res.redirect("/games");
       }
     });
   })

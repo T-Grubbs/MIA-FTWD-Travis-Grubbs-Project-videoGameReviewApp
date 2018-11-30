@@ -1,4 +1,6 @@
 <body>
+  
+
 <div class="profile-page-bg divHeight">
 
 
@@ -7,6 +9,11 @@
 <br>
 <br>
 <br>
-<h1>Welcome {{user.firstname}}</h1>
+<div class='profilePage'>
+<h1>Welcome <br>
+  {{user.username}}</h1><br>
+ <button class='profile-page-btn'type="button"><a href='/games'>Check out the games!</a></button>
+<form action="/delete-user/{{this._id}}" method="POST"><button class="profile-page-btn">Delete ME!</button></form>
 </div>
+  
 </body>

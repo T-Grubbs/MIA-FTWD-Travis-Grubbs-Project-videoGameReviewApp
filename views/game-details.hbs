@@ -1,49 +1,59 @@
 <h1>This is the Game Details Page</h1>
-<div class='divHeight details detailsPage'>
+<div class='details detailsPage details-bg'>
 <div style='width:50vw'>
 
-<div>
-<h1 class='review-header'>
+<h1 class='review-header details-border'>
   {{title}}
 </h1>
+<div class='details-border'>
 <img style="height: 62vh; width: 30vw;" src='{{this.image}}'>
+
+<div style="float:right">
+  <h1>
+  {{platforms}}
+  </h1>
 </div>
 
-  {{platforms}}
 
-<div style="border: 5px solid black; height:25vh;">
+</div>
+<div class="details-border">
 <h4 class='review-header'>Reviews</h4>
 
 <artcle class='comment'>
+  <div class='comment-container'>
+
   {{#each reviews}}
 
+<div>
+{{this.user.username}}<br>
+
+<h4>Rating:
+{{this.rating}}<br>
+</h4>
+<h5>
 {{this.comment}}
+</h5>
+
+  <hr>
+</div>
  
   {{/each}}
+  </div>
 </artcle>
 
  
 </div>
 
-<div>
-<div>
-
-<h3>
-</h3>
-</div>
-<br>
-<div>
-
-
-</div>
-</div>
 
 
 
-<h5><a href="/{{this._id}}/new-review">Add Review</a></h5>
-<a href="/edit-game/{{this._id}}">Edit Info</a>
-{{!-- <a href="/{{this._id}}/delete-game">Delete Game</a> --}}
-<form action="/delete-game/{{this._id}}" method="POST"><button>Delete Game</button></form>
+
+
+<button type="button"><a href="/{{this._id}}/new-review"><h5>Add Review</h5></a></button>
+<button type="button"><a href="/edit-game/{{this._id}}"><h5>Edit Info</h5></a></button>
+
+<form action="/delete-user" method="POST"><button>Delete Game</button></form>
+
 </div>
 </div>
 

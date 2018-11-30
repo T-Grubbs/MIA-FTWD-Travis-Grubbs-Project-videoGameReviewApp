@@ -106,11 +106,11 @@ img {
 }
 
 .sect2-div p {
-  border-radius: 15px;
-  height: 20vh;
-  color: rgba(255, 255, 255, 0.911);
-  background-color: rgba(48, 38, 38, 0.637);
-  width: 50vw;
+  border-radius: 50%;
+  height: 21vh;
+  color: rgba(10, 10, 10, 0.79);
+  background-color: rgba(239, 243, 10, 0.92);
+  width: 74vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,13 +119,11 @@ img {
 
 .sect3 {
   clear: both;
-  // background-color: grey;
+  
   display:flex;
 }
 
-// .sect4{
-//   display: flex;
-// }
+
 
 .sect4-div {
   text-align: center;
@@ -214,20 +212,23 @@ img {
 }
 
 .profile-page-bg {
-  background-image: url('/images/controllers.webp');
+  background-image: url('/images/new-challenger.jpeg');
   background-position: contain;
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
 
 
 
 .add-game-bg {
   background-image: url('/images/consoleSlideImg.webp');
-  background-position: cover;
+  
+  background-position: contain;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  height: auto;
+  padding: 200px 0px;
   padding-left: 60px;
 }
 
@@ -276,12 +277,16 @@ img {
   padding-right: 43px;
 }
 
+.leftPad {
+  padding-left: 43px;
+}
 
 .review-bg {
   background-image: url('/images/Solidsnake2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 .details {
@@ -291,16 +296,105 @@ img {
 }
 
 
+.details-bg{
+  background-image: url('/images/wallpaper2you.jpeg');
+  background-position: cover;
+  background-repeat:repeat ;
+  background-size: contain;
+  
+
+}
+.details-border {
+  border: 5px solid black; height: auto;
+  height: auto;
+  width: auto;
+  border-radius: 13px;
+  background-color: rgba(255, 255, 255, 0.664);
+}
+
+
+.detailsPage{
+  height: auto;
+  width: 100%;
+}
 .review-header {
   text-align: center;
   text-decoration: underline;
-}
+ }
 
-.detailsPage{
-  height: 150%;
-  width: 100%;
-}
 .comment {
   text-align: center;
   margin:10px 35px 10px 35px;
+}
+.comment-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.autoHeight{
+  height: auto;
+  width: 100%;
+}
+
+.profilePage {
+  color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-page-btn {
+  background-color: yellow;
+  color: skyblue;
+  width: 138px;
+  height: 86px;
+  border-radius: 21px;
+}
+
+
+.edit-border {
+  border: 5px solid black; height: auto;
+  height: auto;
+  width: 35%;
+  border-radius: 13px;
+  background-color: rgba(255, 255, 255, 0.664);
+}
+
+.editPage-bg {
+  background-image: url('/images/wow.jpeg');
+  background-position: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.padding-bottom {
+  padding-bottom: 230px
+}
+
+.gamesBorder {
+    width: 21vw;
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.733);
+    border-radius: 25px;
+}
+.gamesList{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+//  background-color:rgba(255, 255, 255, 0.712);
+}
+.gamesBg {
+  background-image: url('/images/mk.png');
+  background-size: cover;
+  background-position: cover;
+
 }

@@ -148,5 +148,7 @@ app.use('/', deleteGame);
 const editGame = require('./routes/edit-game');
 app.use('/', editGame);
 
+const deleteUser = require('./routes/delete-user');
+app.use('/', deleteUser);
 
 module.exports = app;

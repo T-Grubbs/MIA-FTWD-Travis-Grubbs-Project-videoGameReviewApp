@@ -1,39 +1,32 @@
 <h1>Edit {{theGame.title}}</h1>
-
+<div class='editPage-bg'>
+<div class='leftPad edit-border'>
 
 <form action="/update/{{theGame._id}}" method="POST">
 
 
   <label for="">Title:</label>
   <input type="text" name="title" value="{{theGame.title}}">
-
- {{!-- <label for="">Author:</label>
-  <select name="author">
-   {{#each allTheAuthors}}
-   {{#if this.yes}}
-    <option value="{{this._id}}" selected="selected">{{this.firstName}} {{this.lastName}} </option>
-    {{else}}
-        <option value="{{this._id}}">{{this.firstName}} {{this.lastName}} </option>
-   {{/if}}
-   {{/each}}
-  </select> --}}
+<br>
 
   <label for="">Platforms:</label>
   <input type="text" name="platforms" value="{{theGame.platforms}}">
-
+<br>
   <label for="">Genre:</label>
   <input type="text" name="genre" value="{{theGame.genre}}">
-
+<br>
   <label for="">Multiplayer:</label>
   <input type="text" name="multiplayer" value="{{theGame.multiplayer}}">
-
+<br>
   <label for="">Online:</label>
   <input type="text" name="online" value="{{theGame.online}}">
-
+<br>
   <label for="">Image Link:</label>
   <input type="text" name="image" value="{{theGame.image}}">
-
+<br>
   <button type="submit">Save Changes</button>
 
 
 </form>
+</div>
+</div>
