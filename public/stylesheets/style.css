@@ -226,9 +226,10 @@ img {
 
 .details-bg {
   background-image: url("/images/wallpaper2you.jpeg");
-  background-position: cover;
-  background-repeat: repeat;
-  background-size: contain; }
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px; }
 
 .details-border {
   border: 5px solid black;
@@ -311,5 +312,13 @@ img {
   background-image: url("/images/mk.png");
   background-size: cover;
   background-position: cover; }
+
+.details-btn {
+  height: 70px;
+  width: 145px;
+  background-color: yellow;
+  color: skyblue;
+  border-radius: 30px;
+  margin: 10px; }
 
 /*# sourceMappingURL=style.css.map */
