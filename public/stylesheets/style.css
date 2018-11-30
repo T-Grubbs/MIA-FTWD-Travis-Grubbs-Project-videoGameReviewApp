@@ -209,4 +209,27 @@ img {
 .rightPad {
   padding-right: 43px; }
 
+.review-bg {
+  background-image: url("/images/Solidsnake2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
+.review-header {
+  text-align: center;
+  text-decoration: underline; }
+
+.detailsPage {
+  height: 150%;
+  width: 100%; }
+
+.comment {
+  text-align: center;
+  margin: 10px 35px 10px 35px; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,15 +1,51 @@
 <h1>This is the Game Details Page</h1>
+<div class='divHeight details detailsPage'>
+<div style='width:50vw'>
 
-<h1>
-
-  {{this.title}}
-  {{this.platforms}}
+<div>
+<h1 class='review-header'>
+  {{title}}
 </h1>
-<img src='{{this.image}}'>
-<a href="/{{this._id}}/new-review">Add Review</a>
+<img style="height: 62vh; width: 30vw;" src='{{this.image}}'>
+</div>
+
+  {{platforms}}
+
+<div style="border: 5px solid black; height:25vh;">
+<h4 class='review-header'>Reviews</h4>
+
+<artcle class='comment'>
+  {{#each reviews}}
+
+{{this.comment}}
+ 
+  {{/each}}
+</artcle>
+
+ 
+</div>
+
+<div>
+<div>
+
+<h3>
+</h3>
+</div>
+<br>
+<div>
+
+
+</div>
+</div>
+
+
+
+<h5><a href="/{{this._id}}/new-review">Add Review</a></h5>
 <a href="/edit-game/{{this._id}}">Edit Info</a>
 {{!-- <a href="/{{this._id}}/delete-game">Delete Game</a> --}}
 <form action="/delete-game/{{this._id}}" method="POST"><button>Delete Game</button></form>
+</div>
+</div>
 
 
 

@@ -39,22 +39,6 @@ router.post("/signup", (req, res, next) => {
       lastname: lastname,
     });
 
-    // newUser.save((err) => {
-    //   if (err) {
-    //     res.render("signup", { message: "Something went wrong" });
-    //   } else {
-    //     req.login(newUser, (err)=>{
-    //       if (err){
-    //         next(err);
-    //       } else {
-    //         console.log(req.user + '============d==a=v=vff=')
-    //         res.redirect("/test");
-      
-    //       }
-    //     })
-    //   }
-    // });
-
 newUser.save()
 .then(()=>{
   console.log(newUser + 'aslkdfakdjfasdfasf=========sdafa==sd')
@@ -70,36 +54,11 @@ newUser.save()
   next(err)
 })
 
-
-
-
-
-
-
-
   })
   .catch(err => {
     next(err)
   })
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 module.exports = router;

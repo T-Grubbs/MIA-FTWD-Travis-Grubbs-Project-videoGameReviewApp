@@ -1,10 +1,17 @@
+<div class='divHeight review-bg'>
+
+
+
 <h1>
 THIS IS THE REVIEW PAGE
 </h1>
-<form action="/reviews" method="POST">
-<div class="form-group">
-    <label for="exampleFormControlTextarea1">Review</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  <a href="/{{this._id}}/new-review"  <button type="submit">Add Review</button></a>
+<form action="/{{theGame._id}}/new-review" method="POST">
+<div class="my-form-control">
+    <label for="rating">Rating:</label>
+    <input id="rating" type="number" name='rating' placeholder="#"> 
+    <label for="exampleFormControlTextarea1">Review:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name ="comment"></textarea>
+  <button type="submit">Add Review</button>
   </div>
 </form>
+</div>

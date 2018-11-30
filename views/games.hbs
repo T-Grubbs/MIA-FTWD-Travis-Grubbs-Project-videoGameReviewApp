@@ -1,14 +1,15 @@
 <h1>THIS IS THE GAMES PAGE</h1>
-
+<div class='divHeight'>
 {{#each games}}
-<h2>{{this.title}}</h2></a>
+<h2>{{this.title}}</h2>
 <img src="{{this.image}}" alt="" style="width: 100px">
-<a href="/game-details/{{this._id}}">
+<br>
+<a href="/game-details/{{this._id}}">Details</a>
 
 
 
 {{/each}}
-
+</div>
 {{!-- <h1>
 this is the books page
 </h1>
