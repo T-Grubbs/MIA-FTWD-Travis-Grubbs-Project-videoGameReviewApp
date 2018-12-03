@@ -329,4 +329,11 @@ img {
   height: 60px;
   padding-left: 30px; }
 
+.login-btn {
+  background-color: yellow;
+  color: skyblue;
+  width: 138px;
+  height: 46px;
+  border-radius: 21px; }
+
 /*# sourceMappingURL=style.css.map */
