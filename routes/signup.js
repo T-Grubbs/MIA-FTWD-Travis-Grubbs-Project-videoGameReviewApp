@@ -44,7 +44,7 @@ router.post('/signup', (req, res, next) => {
 						if (err) {
 							next(err);
 						} else {
-							res.redirect('/test');
+							res.redirect('/');
 						}
 					});
 				})
