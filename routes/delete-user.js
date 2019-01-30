@@ -14,21 +14,4 @@ router.post('/delete-user', (req, res, next)=>{
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 module.exports = router;
