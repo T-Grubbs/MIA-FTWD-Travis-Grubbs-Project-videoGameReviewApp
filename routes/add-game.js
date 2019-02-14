@@ -18,7 +18,7 @@ router.post('/add-game', (req, res, next) => {
 	Game.findOne({ title })
 		.then((game) => {
 			if (game !== null) {
-				res.render('add-game', { message: 'The game already exists' });
+				res.render('add-game', { message: 'THIS GAME ALREADY EXSIST, BRO' });
 				return;
 			}
 
@@ -34,7 +34,7 @@ router.post('/add-game', (req, res, next) => {
 
 			newGame.save((err) => {
 				if (err) {
-					res.render('add-game', { message: 'Something went wrong' });
+					res.render('add-game', { message: 'ERROR! SOMETHING WENT WRONG!' });
 				} else {
 					res.redirect('/games');
 				}

@@ -15,14 +15,14 @@ router.post('/signup', (req, res, next) => {
 	const password = req.body.password;
 
 	if (username === '' || password === '') {
-		res.render('signup', { message: 'Indicate username and password' });
+		res.render('signup', { message: 'INDICATE USERNAME AND PASSWORD' });
 		return;
 	}
 
 	User.findOne({ username })
 		.then((user) => {
 			if (user !== null) {
-				res.render('signup', { message: 'The username already exists' });
+				res.render('signup', { message: 'THE USERNAME IS ALREADY TAKEN, BRO' });
 				return;
 			}
 
